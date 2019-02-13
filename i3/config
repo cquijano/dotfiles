@@ -243,13 +243,13 @@ bar {
 #font pango:mono 10
   font pango: ohsnap, awesome 10
 	colors {
-			background $darkblack 
-			statusline $darkwhite
-			separator $cyan
-			focused_workspace  $blue $darkblue $darkblack
-        		active_workspace   $blue $blue $darkwhite
-      			inactive_workspace $darkblack $darkblack $white
-        		urgent_workspace   $darkblack $darkblack $white
+    background $darkblack 
+    statusline $darkwhite
+    separator $cyan
+    focused_workspace  $blue $darkblue $darkblack
+    active_workspace   $blue $darkwhite $darkblack
+    inactive_workspace $darkblack $darkblack $white
+    urgent_workspace   $darkblack $darkblack $white
 		}
   status_command i3blocks -c ~/.config/i3/i3blocks.conf
 	mode dock

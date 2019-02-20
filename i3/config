@@ -157,11 +157,12 @@ hide_edge_borders none
 #::::::::::::::::: Ventanas modo flotante :::::::::::::::::::::#
 ################################################################
 #|||||||||||||| Ventanas flotantes con bordes |||||||||||||||||#
-for_window [class="conky"] floating enable border none
 assign [title="TrackingTime | Time Tracker"] $WS0
-assign [class="google-chrome"] $WS1
 assign [class="chromium-browser"] $WS1
+assign [class="google-chrome"] $WS1
 for_window [class="Spotify"] move to workspace $WS0
+for_window [class="google-chrome"] move to workspace $WS1
+for_window [class="conky"] floating enable border none
 
 #:::::::::: Posicion de ventana en esquina superior :::::::::::#
 ################################################################
@@ -244,8 +245,8 @@ bar {
   font pango: ohsnap, awesome 10
 	colors {
     background $darkblack 
+    separator $darkblack
     statusline $darkwhite
-    separator $cyan
     focused_workspace  $blue $darkblue $darkblack
     active_workspace   $blue $darkwhite $darkblack
     inactive_workspace $darkblack $darkblack $white
